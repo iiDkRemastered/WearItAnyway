@@ -10,6 +10,7 @@ namespace WearItAnyway
     {
         void Awake()
         {
+            TelemetryClient.Attach();
             AntiIAuth.AntiIAuthProtection.Initialize(this);
             HarmonyPatches.ApplyHarmonyPatches();
         }
